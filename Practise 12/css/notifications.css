@@ -1,0 +1,116 @@
+.notifications-container {
+    display: flex;
+    position: relative;
+}
+
+.notifications-list {
+    display: none;
+}
+
+.notifications {
+    padding: 5px;
+    background-color: rgb(76, 76, 76);
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+.notifications-number {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: rgb(44, 44, 44);
+
+    width: 20px;
+    height: 20px;
+    box-shadow: 0 0 3px black;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notifications:hover{
+    background-color: rgb(103, 103, 103);
+}
+
+.toggle {
+    display: none;
+}
+
+.toggle:checked ~ .notifications-list {
+    display: flex;
+    flex-direction: column;
+
+    max-height: 400px;
+    overflow-y: scroll;
+
+    padding: 7px 15px;
+
+    gap: 15px;
+    position: absolute;
+    top: 80px;
+    width: 30vw;
+    box-shadow: 0 0 14px #030303;
+    background-color: #7c7c7c;
+    text-align: left;
+
+    border-radius: 0 0 10px 10px;
+}
+
+.toggle:checked ~ .notifications::before {
+    visibility: hidden;
+}
+
+.notifications-item {
+    padding: 15px 0px;
+    transition: all 0.5s;
+}
+
+.notifications-item:hover {
+    background-color: rgb(103, 103, 103);
+    border-radius: 10px;
+    transform: scale(1.1);
+}
+
+.notifications-number {
+    flex-shrink: 0;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+}
+
+@media screen and (max-width: 840px) {
+    .toggle:checked ~ .notifications-list {
+        right: 0;
+        width: 300px;
+    }
+}
+
+/*-----------------------------------------------------------*/
+
+.notification-section {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    padding: 10px;
+    z-index: 1000;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.notification {
+    padding: 5px 20px;
+    border: 2px solid black;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 25px;
+    background: #424242;
+    position: relative;
+}

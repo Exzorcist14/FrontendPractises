@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initialscale=1.0">
+    <title>Сборки</title>
+    <link rel="icon" type="image/png" href="img/logo/ComputerFavicon.png">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/polygon.css">
+    <link rel="stylesheet" href="css/assemblies.css">
+    <link rel="stylesheet" href="css/notifications.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <script src="js/sidebar.js"></script>
+    <script src="https://kit.fontawesome.com/563ce4d2d7.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="body-grid">
+    <div class="it-header">
+        <header>
+            <div class="logo">
+                <img class="logo-img" src="img/logo/ComputerLogo.png" alt="Логотип сайта" width="50" height="50">
+                <h1 id="Topic1" align="left">  <b id="content">TechHaven</b> </h1>
+            </div>
+
+            <div class="head">
+                <div class="notifications-container">
+                    <input type="checkbox" id="notifications-list" class = toggle>
+                    <label for="notifications-list" class="round-button">
+                        <img src="img/auxiliary/NotificationsLogo.png" width="45" height="45">
+                    </label>
+
+                    <div class="notifications-list">
+                        <div class="notifications-item">
+                            Вышла новая запись в блоге TechHaven
+                        </div>
+
+                        <div class="notifications-item">
+                            Сотрудники TechHaven протестировали новую сборку на GeForce RTX 4090 и Intel Core i9 13900K
+                        </div>
+
+                        <div class="notifications-item">
+                            В каталоге пополнение, не забудьте заглянуть!
+                        </div>
+
+                        <div class="notifications-item">
+                            Внимание! Сайт будет отключён 12.12.2023 в связи с техническим обслуживанием, но вскоре вновь заработает
+                        </div>
+                    </div>
+
+                    <div class="notifications-number">4</div>
+
+                    <script src="js/notifications.js"></script>
+                </div>
+
+                <input type="checkbox" id="checkbox_toggle">
+                <label for="checkbox_toggle" class="hamburger"><span class="hamburger-line"></span></label>
+                <nav>
+                    <a href="index.html" >Главная</a>
+                    <a href="blog.html">Блог</a>
+                    <a href="assemblies.html">Сборки</a>
+                    <a href="services.html">Услуги</a>
+                    <a href="gallery.html">Галерея</a>
+                    <a href="cart.html">Магазин</a>
+                    <a href="polygon.html">Полигон</a>
+                </nav>
+
+            </div>
+        </header>
+    </div>
+
+    <div class="it-main">
+        <main>
+            <section>
+                <div id="contents">
+                    <a href="https://www.youtube.com/watch?v=F5ZKI-g-_qo">Ссылка (не в Сибирь)</a>
+                </div>
+            </section>
+
+            <section>
+                <div class="gallery">
+                    <img
+                            id="bigImg"
+                            class="pict"
+                            src="img/gallery/KINGSTON%20(2).jpg"
+                    />
+
+                    <div id="container">
+                        <div class="small-img">
+                            <img
+                                    class="pict"
+                                    src="img/gallery/KINGSTON%20(2).jpg"
+                            />
+                        </div>
+                        <div class="small-img">
+                            <img
+                                    class="pict"
+                                    src="img/gallery/PC4.jpg"
+                            />
+                        </div>
+                        <div class="small-img">
+                            <img
+                                    class="pict"
+                                    src="img/gallery/AEROCOOL.png"
+                            />
+                        </div>
+                        <div class="small-img">
+                            <img
+                                    class="pict"
+                                    src="img/gallery/AESTHETICS.jpg"
+                            />
+                        </div>
+                        <div class="small-img">
+                            <img
+                                    class="pict"
+                                    src="img/gallery/PSU.jpg"
+                            />
+                        </div>
+                        <div class="small-img">
+                            <img
+                                    class="pict"
+                                    src="img/gallery/RTX40.jpeg"
+                            />
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section>
+                <div class="selection-list">
+                    <ul id="items">
+                        <li>Видеокарты</li>
+                        <li>Процессоры</li>
+                        <li>Оперативная память</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <div id="slider">
+                    <div id="thumbler"></div>
+                </div>
+            </section>
+
+            <section>
+                <div class="tr">
+                    <div class="products">
+                        <div class="element" draggable="true" id="el_1">
+                            <img src="img/catalog/GPU/GTX%201060%206GB.png">
+                            <span>22000</span>
+                        </div>
+                        <div class="element" draggable="true" id="el_2">
+                            <img src="img/catalog/GPU/RTX%203070%20Ti.png">
+                            <span>65000</span>
+                        </div>
+                        <div class="element" draggable="true" id="el_3">
+                            <img src="img/catalog/CPU/Intel%20Core%20i9-10900F.png">
+                            <span>34000</span>
+                        </div>
+                        <div class="element"  id="el_4">
+                            <img src="img/catalog/RAM/Kingston%20FURY%20Beast%20Black%20%5BKF426C16BB16%5D.png">
+                            <span>4000</span>
+                        </div>
+                    </div>
+
+                    <div class="bed">
+                        <img src="img/auxiliary/cart.png">
+                        <p>Итоговая стоимость</p>
+                        <span>0</span>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="animation">
+                    <textarea id="mainText" rows="5" cols="60">Команда энтузиастов, объединенных страстью к компьютерам и инновациям. Наш маленький уголок интернета посвящен миру компьютерных комплектующих, созданных специально для тех, кто видит в каждом детали не просто элемент, а возможность раскрыть потенциал своего устройства</textarea>
+                    <button id="mainButton">Жмяк</button>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div class="it-sidebar">
+        <sidebar>
+        </sidebar>
+    </div>
+
+    <div class="it-aside">
+        <aside>
+        </aside>
+    </div>
+
+    <div class="it-footer">
+        <footer class="page-footer">
+            <div class="container">
+                <div class="sec aboutus">
+                    <h2>О нас</h2>
+                    <p>
+                        Команда энтузиастов, объединенных страстью к компьютерам и инновациям. Наш маленький уголок интернета посвящен миру компьютерных комплектующих, созданных специально для тех, кто видит в каждом детале не просто элемент, а возможность раскрыть потенциал своего устройства
+                    </p>
+
+                    <ul class="container_for_icons">
+                        <li><a href="https://www.youtube.com/watch?v=l6FBlQ29UG0"><i class="fa fa-youtube"></i></a></li>
+                        <li><a href="https://github.com/"><i class="fa fa-github"></i></a></li>
+                        <li><a href="https://web.telegram.org/k/"><i class="fa fa-paper-plane"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="sec quicklinks">
+                    <h2>Пользователям</h2>
+                    <ul>
+                        <li><a href="privacy-policy.html">Политика конфиденциальности</a></li>
+                        <li><a href="feedback.html">Форма обратной связи</a></li>
+                    </ul>
+                </div>
+
+                <div class="sec contact">
+                    <h2>Контактная информация</h2>
+                    <ul class="info">
+                        <li>
+                            <span><i class="fa fa-map-marker"></i></span>
+                            Вернадского 86с1
+                        </li>
+                        <li>
+                            <span><i class="fa fa-phone"></i></span>
+                            <a href="#">+7 908 324 14 74</a>
+                        </li>
+                        <li>
+                            <span><i class="fa fa-envelope"></i></span>
+                            <a href="#">vladimir_namestnikov@vk.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        <div class="copyrightText">
+            Наместников Владимир Николаевич | ИКБО-20-22
+        </div>
+    </div>
+
+    <script src="js/polygon.js"></script>
+</body>
+</html>

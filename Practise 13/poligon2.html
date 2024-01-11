@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles2.css">
+    <title>Полигон</title>
+</head>
+
+<body>
+    <div class="bl">
+        <img src="parallax.jpg" alt="pypypy">
+        <p align="center">Вообще говоря, тут должен быть текст, но его нет. Это иллюзия.</p>
+        <p align="center"> <button class="sunset-button"><a href="index.html">Нажми меня</a></button></p>
+    </div>
+
+    <p align="center">Вообще говоря, тут должен быть текст, но его нет. Это иллюзия.</p>
+    <p align="center">Вообще говоря, тут должен быть текст, но его нет. Это иллюзия.</p>
+    <p align="center">Вообще говоря, тут должен быть текст, но его нет. Это иллюзия.</p>
+    <p align="center">Вообще говоря, тут должен быть текст, но его нет. Это иллюзия.</p>
+    <p align="center">Вообще говоря, тут должен быть текст, но его нет. Это иллюзия.</p>
+    <p align="center">Вообще говоря, тут должен быть текст, но его нет. Это иллюзия.</p>
+    <p align="center">Вообще говоря, тут должен быть текст, но его нет. Это иллюзия.</p>
+    <p align="center">Вообще говоря, тут должен быть текст, но его нет. Это иллюзия.</p>
+    <p align="center">Вообще говоря, тут должен быть текст, но его нет. Это иллюзия.</p>
+    <p align="center">Вообще говоря, тут должен быть текст, но его нет. Это иллюзия.</p>
+    <p align="center">Вообще говоря, тут должен быть текст, но его нет. Это иллюзия.</p>
+    <p align="center">Вообще говоря, тут должен быть текст, но его нет. Это иллюзия.</p>
+    <p align="center">Вообще говоря, тут должен быть текст, но его нет. Это иллюзия.</p>
+    <p align="center">Вообще говоря, тут должен быть текст, но его нет. Это иллюзия.</p>
+    <p align="center">Вообще говоря, тут должен быть текст, но его нет. Это иллюзия.</p>
+    <p align="center">Вообще говоря, тут должен быть текст, но его нет. Это иллюзия.</p>
+
+    <script>
+        let img = document.querySelector(".bl img");
+        let imgBlock = document.querySelector(".bl");
+
+        function imageToCenter(img) {
+            img.style.left = (img.parentElement.clientWidth - img.clientWidth) / 2 + "px";
+            img.style.top =
+                (img.parentElement.clientHeight - img.clientHeight) / 2 + "px";
+        }
+
+        imageToCenter(img);
+
+        document.addEventListener('DOMContentLoaded', function () {
+            document.addEventListener('click', function (event) {
+                const x = event.clientX;
+                const y = event.clientY;
+
+                alert(`Координаты: (${x}; ${y})`);
+            });
+        });
+    </script>
+</body>
+</html>

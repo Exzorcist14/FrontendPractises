@@ -1,0 +1,57 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.parallax-container {
+    position: relative;
+    height: 100vh;
+}
+
+.parallax-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 225%;
+    background: url('parallax.jpg') center/cover no-repeat;
+    transform-origin: 100% 100%;
+    transform: translateZ(0);
+    will-change: transform;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -15%);
+    color: #fff;
+    text-align: center;
+}
+
+h1, p {
+    margin: 0;
+}
+
+
+
+.sunset-button {
+    background-color: #e57373; /* Цвет кнопки */
+    color: #fff; /* Цвет текста кнопки */
+    padding: 10px 20px; /* Внутренние отступы кнопки */
+    font-size: 16px; /* Размер шрифта кнопки */
+    border: none; /* Убираем границу кнопки */
+    border-radius: 5px; /* Скругляем углы кнопки */
+    cursor: pointer; /* Задаем курсор при наведении */
+    transition: background-color 0.3s ease; /* Плавное изменение цвета при наведении */
+}
+
+.sunset-button:hover {
+    background-color: #d32f2f; /* Цвет кнопки при наведении */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}

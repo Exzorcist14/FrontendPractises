@@ -1,0 +1,45 @@
+.bl img {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+}
+
+.bl {
+    background-color: #212121;
+    width: 1000px;
+    height: 500px;
+    position: relative;
+}
+
+.bl p {
+    color: white;
+}
+
+p {
+    color: #4b4b4b;
+}
+
+body {
+    background: #4b4b4b;
+}
+
+.sunset-button {
+    background-color: #e57373; /* Цвет кнопки */
+    color: #fff; /* Цвет текста кнопки */
+    padding: 10px 20px; /* Внутренние отступы кнопки */
+    font-size: 16px; /* Размер шрифта кнопки */
+    border: none; /* Убираем границу кнопки */
+    border-radius: 5px; /* Скругляем углы кнопки */
+    cursor: pointer; /* Задаем курсор при наведении */
+    transition: background-color 0.3s ease; /* Плавное изменение цвета при наведении */
+}
+
+.sunset-button:hover {
+    background-color: #d32f2f; /* Цвет кнопки при наведении */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+

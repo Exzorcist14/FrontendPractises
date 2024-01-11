@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap');
+
+body {
+    background-color: #4b4b4b;
+    color: #dedede;
+    font-family: 'Droid Sans Mono', cursive;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    height: 155px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+header img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header h1 {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 35px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 3px;
+    margin-bottom: 7px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+
+    transition: background-color 0.5s;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+main {
+    margin-left: 50px;
+    margin-right: 260px;
+}
+
+.first-block, .second-block  {
+    display: block;
+    background-color: #606060;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+}
+
+.first-block img {
+    float: left;
+    margin-right: 25px;
+}
+
+.second-block img {
+    float: right;
+}
+
+blockquote {
+    font-family: 'Playfair Display', serif;
+    position: relative;
+    left: 75px;
+    z-index: 0;
+}
+
+cite {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+main p {
+    font-family: 'Droid Sans Mono', cursive;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+aside {
+    background-color: #333;
+
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: 1px solid #fff;
+    border-radius: 14px;
+    width: 200px;
+    position: fixed;
+    bottom: 130px;
+    right: 0;
+}
+
+
+.form {
+    background-color: #edeff0;
+    margin: auto;
+    border: 2px solid black;
+}
+
+iframe {
+    margin: 5px;
+}
+
+input::placeholder {
+    color: #525252;
+    text-align: center;
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+input:focus{
+    color: #1ea0a0;
+}
+
+input {
+    color: white;
+    font-family: 'Akaya Kanadaka', cursive;
+    border-style:ridge;
+    border-color: #111111;
+    background-color: #7e7e7e;
+    margin: 1ex;
+    padding: 2ch;
+}
+
+button {
+    color: white;
+    font-family: 'Akaya Kanadaka', cursive;
+    border-style:ridge;
+    border-color: #111111;
+    background-color: #7e7e7e;
+    margin: 1vh;
+    padding: 1vh;
+}
+
+.mainFooter {
+    background-color: #1e1e1e;
+    font-size: 14px;
+    padding: 20px;
+    color: white;
+}
+
+.mainFooter a {
+    color: white;
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
